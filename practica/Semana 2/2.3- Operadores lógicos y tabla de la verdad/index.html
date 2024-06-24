@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos y tabla de la verdad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Operadores lógicos y tabla de la verdad</h1>
+    </header>
+    <main class="content">
+        <section class="operators">
+            <h2>Operadores</h2>
+            <article class="comparison-operators">
+                <h3>Operadores de comparación</h3>
+                <p>Los operadores de comparación se utilizan para comparar dos valores y devolver un resultado booleano.</p>
+                <ul>
+                    <li>== Igual a, ejemplo: a==b</li>
+                    <li>!= Diferente de, ejemplo: a!=b</li>
+                    <li>=== Idéntico a, ejemplo: a===b</li>
+                    <li>!== No idéntico a, ejemplo: a!==b</li>
+                    <li>&gt; Mayor que, ejemplo: a&gt;b</li>
+                    <li>&lt; Menor que, ejemplo: a&lt;b</li>
+                    <li>&gt;= Mayor o igual que, ejemplo: a&gt;=b</li>
+                    <li>&lt;= Menor o igual que, ejemplo: a&lt;=b</li>
+                </ul>
+            </article>
+            <article class="logical-operators">
+                <h3>Operadores lógicos</h3>
+                <p>Los operadores lógicos se utilizan para combinar declaraciones condicionales y devolver un resultado booleano.</p>
+                <ul>
+                    <li>&amp;&amp; y, ejemplo: a&amp;&amp;b</li>
+                    <li>|| o, ejemplo: a||b</li>
+                    <li>! no, ejemplo: !a</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h2>Tabla de la verdad</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>A && B</th>
+                        <th>A || B</th>
+                        <th>!A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>true</td>
+                        <td>true</td>
+                        <td>true</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>true</td>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>true</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>false</td>
+                        <td>true</td>
+                        <td>false</td>
+                        <td>true</td>
+                        <td>true</td>
+                    </tr>
+                    <tr>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>false</td>
+                        <td>true</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

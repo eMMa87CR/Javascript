@@ -1,0 +1,77 @@
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1, h2, p {
+    margin: 0 0 20px 0;
+}
+
+/* Contenedor principal */
+div {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+/* Primer div diferenciado */
+div:first-of-type {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Segundo div diferenciado */
+div:nth-of-type(2) {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+/* Tercer div diferenciado */
+div:nth-of-type(3) {
+    background-color: #dc3545;
+    color: #000000;
+    border: none;
+}
+/*Cuarto div diferenciado */
+div:nth-of-type(4) {
+    background-color: #ffc107;
+    color: #000000;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    div {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* Pre y código */
+pre, code {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* Ajustes específicos para el texto dentro de los divs diferenciados */
+div:first-of-type pre, div:first-of-type code, div:nth-of-type(2) pre, div:nth-of-type(2) code {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}

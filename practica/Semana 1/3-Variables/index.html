@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en JavaScript</title>
+    <link rel="stylesheet" href="/3-Variables/estilo.css">
+    <script defer src="/3-Variables/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Variables en JavaScript</h1>
+
+        <section>
+            <h2>¿Qué es una variable?</h2>
+            <p>En programación, una variable es un espacio de memoria que se reserva para almacenar un valor. Este valor
+                puede ser modificado durante la ejecución del programa.</p>
+        </section>
+
+        <section>
+            <h2>Declaración de Variables</h2>
+            <p>En JavaScript, las variables se pueden declarar usando <code>var</code>, <code>let</code> y
+                <code>const</code>.</p>
+
+            <h3>var</h3>
+            <p>La declaración con <code>var</code> tiene un alcance global o de función y puede ser reasignada y
+                redeclarada.</p>
+            <pre><code>var nombre = "Juan";
+console.log(nombre); // Juan
+
+var nombre = "Pedro";
+console.log(nombre); // Pedro</code></pre>
+
+            <h3>let</h3>
+            <p>La declaración con <code>let</code> tiene un alcance de bloque y puede ser reasignada, pero no
+                redeclarada en el mismo ámbito.</p>
+            <pre><code>let edad = 30;
+console.log(edad); // 30
+
+edad = 31;
+console.log(edad); // 31</code></pre>
+
+            <h3>const</h3>
+            <p>La declaración con <code>const</code> también tiene un alcance de bloque, pero no puede ser reasignada ni
+                redeclarada. Sin embargo, los objetos y arrays declarados con <code>const</code> pueden tener sus
+                propiedades modificadas.</p>
+            <pre><code>const pi = 3.1416;
+console.log(pi); // 3.1416
+
+const persona = { nombre: "Ana", edad: 25 };
+persona.edad = 26;
+console.log(persona); // { nombre: "Ana", edad: 26 }</code></pre>
+        </section>
+
+        <section>
+            <h2>Tipos de Datos</h2>
+            <p>Las variables en JavaScript pueden almacenar diferentes tipos de datos, como números, cadenas de texto,
+                booleanos, arreglos, objetos, funciones, etc.</p>
+            <pre><code>var numero = 10;
+let cadena = "Hola, mundo!";
+const booleano = true;</code></pre>
+        </section>
+
+        <section>
+            <h2>Mostrar Variables en la Consola</h2>
+            <p>Para mostrar el valor de una variable en la consola del navegador, se utiliza la función
+                <code>console.log()</code>.</p>
+            <pre><code>console.log(numero);
+console.log(cadena);
+console.log(booleano);</code></pre>
+        </section>
+    </div>
+</body>
+
+</html>

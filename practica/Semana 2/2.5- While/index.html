@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle While</title>
+    <link rel="stylesheet" href="./style.css">
+    <script async src="./script.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Bucle While</h1>
+    </div>
+    <div>
+        <h2>
+            Ciclo While
+        </h2>
+        <p>
+            El ciclo while se ejecuta mientras la condición sea verdadera.
+        </p>
+        <p>
+            Sintaxis:
+        </p>
+        <pre>
+            while (condición) {
+                // Código a ejecutar
+            }
+        </pre>
+        <p>
+            Ejemplo:
+        </p>
+        <pre>
+            let i = 0;
+            while (i < 5) {
+                console.log(i);
+                i++;
+            }
+        </pre>
+    </div>
+    <div>
+        <h2>Ciclo Do While</h2>
+        <p>
+            El ciclo do while se ejecuta al menos una vez y luego se ejecuta mientras la condición sea verdadera.
+        </p>
+        <p>
+            Sintaxis:
+        </p>
+        <pre>
+            do {
+                // Código a ejecutar
+            } while (condición);
+        </pre>
+        <p>
+            Ejemplo:
+        </p>
+        <pre>
+            let numero = 0;
+            do {
+                numero = (window.prompt("Ingrese un número"));
+                console.log("do while", numero);
+            } while (parseInt(numero));
+        </pre>
+    </div>
+    <div>
+        <h2>While no se ejecuta</h2>
+        <p>En el siguiente ejemplo, la condición del ciclo while no se cumple, por lo que el ciclo no se ejecuta.
+        </p>
+        <pre>
+        let j = 7;
+        while (j<6){
+            console.log("while no se ejecuta",j);
+            j++;
+        }
+        </pre>
+    </div>
+
+</body>
+
+</html>
