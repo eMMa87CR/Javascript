@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Bug</title>
+    <link rel="stylesheet" href="./style.css">
+    <script async src="./script.js"></script>
+</head>
+
+<body>
+    <h1>ACTIVIDAD 1</h1>
+    <div>
+        <pre>let cantidad = prompt('INGRESE CANTIDAD DE REPETICIONES');
+        let texto = prompt('INGRESE TEXTO A REPETIR');
+        for (let index = 0; index < cantidad; index) {
+        console.log(texto);
+        }</pre>
+        <ul>
+            <li>¿Qué tiene que hacer este código?</li>
+            <li>¿Por qué no cumple con su función?</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Respuesta</h2>
+        <p>El código tiene como objetivo solicitar al usuario que ingrese una cantidad de repeticiones y un texto a repetir. Luego, intenta repetir el texto ingresado la cantidad de veces especificada por el usuario.</p>
+
+        <p>El código no cumple con su función debido a dos razones principales:
+        <ul>
+        <li>1. <strong>Conversión de Tipo</strong>: La función `prompt` devuelve una cadena de texto (`string`), pero el bucle `for` espera que `cantidad` sea un número (`number`) para poder realizar la comparación y la iteración correctamente. Es necesario convertir `cantidad` a un número usando `parseInt` o `Number`.</li>
+        
+        <li>2. <strong>Incremento del Índice</strong>: En el bucle `for`, el índice `index` nunca se incrementa dentro del bucle, lo que resulta en un bucle infinito si el código se ejecutara correctamente. Se necesita añadir `index++` o `index += 1` para incrementar el valor de `index` en cada iteración.</li></p>
+    </ul>
+        Aquí está el código corregido:
+        
+    <pre>
+        let cantidad = parseInt(prompt('INGRESE CANTIDAD DE REPETICIONES'), 10);
+        let texto = prompt('INGRESE TEXTO A REPETIR');
+        for (let index = 0; index < cantidad; index++) {
+            console.log(texto);
+        }
+    </pre>
+    </div>
+</body>
+
+</html>
